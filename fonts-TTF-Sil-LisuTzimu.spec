@@ -24,16 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains free Unicode TrueType fonts for the Lisu script.
 
-#%%description -l pl.UTF-8
-# TODO
-
 %prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{ttffontsdir}
-
-install %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} $RPM_BUILD_ROOT%{ttffontsdir}
+cp -a %{SOURCE0} %{SOURCE1} %{SOURCE2} %{SOURCE3} $RPM_BUILD_ROOT%{ttffontsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
