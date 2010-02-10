@@ -1,5 +1,5 @@
-Summary:	Free TrueType font for Lisu script
-Summary(pl.UTF-8):	Wolnodostępny font TrueType dla pisma lisu
+Summary:	Free TrueType fonts for Lisu script
+Summary(pl.UTF-8):	Wolnodostępne fonty TrueType dla pisma lisu
 Name:		fonts-TTF-Sil-LisuTzimu
 Version:	1.0
 Release:	1
@@ -22,6 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		ttffontsdir	%{_fontsdir}/TTF
 
 %description
+This package contains free Unicode TrueType fonts for the Lisu script.
 
 #%%description -l pl.UTF-8
 # TODO
