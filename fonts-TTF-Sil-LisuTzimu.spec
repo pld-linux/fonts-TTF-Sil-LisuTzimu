@@ -27,7 +27,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 # TODO
 
 %prep
-%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
